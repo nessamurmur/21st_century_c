@@ -5,3 +5,4 @@ LDLIBS=
 CC=gcc
 
 $(P): $(OBJECTS)
+		$(CC) $(CFLAGS) $(LDFLAGS) -o bin/$@ src/$(P).c
